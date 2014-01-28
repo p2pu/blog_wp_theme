@@ -510,60 +510,10 @@ SIDEBARS & ASIDES
 
 /* links widget */
 /* meta widget */
-.widget_meta ul li a {
-  font-size: 12px;
-  color: #999; }
-
 /* pages widget */
 /* recent-posts widget */
 /* archives widget */
-.widget_archive select {
-  width: 100%; }
-
 /* tag-cloud widget */
-.widget_tag_cloud .tag-link-13,
-.widget_tag_cloud .tag-link-32,
-.widget_tag_cloud .tag-link-50,
-.widget_tag_cloud .tag-link-45,
-.widget_tag_cloud .tag-link-40,
-.widget_tag_cloud .tag-link-36,
-.widget_tag_cloud .tag-link-7,
-.widget_tag_cloud .tag-link-21,
-.widget_tag_cloud .tag-link-33,
-.widget_tag_cloud .tag-link-24,
-.widget_tag_cloud .tag-link-17,
-.widget_tag_cloud .tag-link-19,
-.widget_tag_cloud .tag-link-26 {
-  color: #b7d500; }
-.widget_tag_cloud .tag-link-31,
-.widget_tag_cloud .tag-link-49,
-.widget_tag_cloud .tag-link-2,
-.widget_tag_cloud .tag-link-34,
-.widget_tag_cloud .tag-link-5,
-.widget_tag_cloud .tag-link-20,
-.widget_tag_cloud .tag-link-4,
-.widget_tag_cloud .tag-link-35,
-.widget_tag_cloud .tag-link-37,
-.widget_tag_cloud .tag-link-52,
-.widget_tag_cloud .tag-link-38,
-.widget_tag_cloud .tag-link-18,
-.widget_tag_cloud .tag-link-44 {
-  color: #ffbc1a; }
-.widget_tag_cloud .tag-link-25,
-.widget_tag_cloud .tag-link-6,
-.widget_tag_cloud .tag-link-14,
-.widget_tag_cloud .tag-link-27,
-.widget_tag_cloud .tag-link-51,
-.widget_tag_cloud .tag-link-48,
-.widget_tag_cloud .tag-link-39,
-.widget_tag_cloud .tag-link-28,
-.widget_tag_cloud .tag-link-9,
-.widget_tag_cloud .tag-link-8,
-.widget_tag_cloud .tag-link-23,
-.widget_tag_cloud .tag-link-41,
-.widget_tag_cloud .tag-link-11 {
-  color: #ff7300; }
-
 /* calendar widget */
 /* category widget */
 /* recent-comments widget */
@@ -611,6 +561,9 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
+body {
+  padding-top: 60px; }
+
 /* 
 you can call the larger styles if you want, but there's really no need 
 */
