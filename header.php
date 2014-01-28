@@ -75,7 +75,7 @@
 					'menu_class' => 'nav visible-desktop'
 				)); ?>
 
-			<ul class="nav pull-right">
+			<ul class="nav pull-right nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet">
 
 				<li>
 

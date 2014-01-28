@@ -14,7 +14,16 @@
 
 									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+										printf( __( 'by <span class="author">%3$s</span> on <time class="updated" datetime="%1$s" pubdate>%2$s</time> <span class="amp">&middot;</span> <span class="comments-count" ><a href="%5$s#disqus_thread">%4$s Comments</a></span>. ', 'bonestheme' ),
+											get_the_time( 'Y-m-j' ),
+											get_the_time( __( 'F j, Y', 'bonestheme' ) ),
+											bones_get_the_author_posts_link(),
+											wp_count_comments( $id )->approved,
+											get_permalink( $id )
+										);
+										if ( is_user_logged_in() ) {
+											echo '<a href="' . get_edit_post_link( $id, $context ) . '"><small>[EDIT]</small></a>';
+										}
 									?></p>
 
 								</header>

@@ -7258,8 +7258,6 @@ POSTS & CONTENT STYLES
     padding: 10px; }
   .entry-content .thumbnail-wrapper {
     margin-right: 25px; }
-  .entry-content .excerpt-wraper {
-    overflow: hidden; }
   .entry-content .excerpt-read-more {
     display: block;
     margin: 0;
@@ -7946,7 +7944,10 @@ you can add resource intensive styles.
   
   ******************************************************************/
   body {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+
+  .excerpt-wraper {
+    overflow: hidden; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
