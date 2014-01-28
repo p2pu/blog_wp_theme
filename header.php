@@ -38,6 +38,7 @@
 	<?php // wordpress head functions ?>
 	<?php wp_head(); ?>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/library/css/jquery.sidr.dark.css">
 	<?php // end of wordpress head ?>
 
 	<?php // drop Google Analytics Here ?>
@@ -70,8 +71,8 @@
 			<?php wp_nav_menu(
 				array(
 					'theme_location' => 'Main Nav',
-					'container_class' => 'nav-collapse collapse mindevices-side-menu',
-					'menu_class' => 'nav'
+					'container_class' => 'nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet',
+					'menu_class' => 'nav visible-desktop'
 				)); ?>
 
 			<ul class="nav pull-right">

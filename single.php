@@ -50,7 +50,7 @@
 
 												<a href="http://www.facebook.com/sharer.php?u=<?php echo $upermalink; ?>&amp;t=<?php echo urlencode( strip_tags($utitle) );?>" title="<?php printf( __('Share on'));?> Facebook" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/facebook.png" alt="Facebook" /></a>
 
-												<a href="http://twitter.com/?status=This%20post%20%40p2pu%20blog%3A%20<?php echo $utitle;?>%20<?php echo $upermalink;?>%20" title="<?php printf( __('Share on'));?> Twitter" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/twitter.png" alt="Twitter" /></a>
+												<a href="http://twitter.com/?status=New%20post%20%40p2pu%20blog%3A%20<?php echo $utitle;?>%20<?php echo $upermalink;?>%20" title="<?php printf( __('Share on'));?> Twitter" rel="nofollow" target="_blank"><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/twitter.png" alt="Twitter" /></a>
 
 												<a href="https://plus.google.com/share?url=<?php echo $upermalink;?>" target="_blank" title="<?php printf( __('Share on'));?> Google+" rel="nofollow" ><img src="<?php bloginfo ('template_url'); ?>/library/images/share_icons/google.png" alt="Google+" ></a>
 

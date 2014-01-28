@@ -194,43 +194,4 @@ function p2pu_navigation_menus() {
 add_action( 'init', 'p2pu_navigation_menus' );
 
 
-
-add_filter('metabar', 'do_shortcode', 20);
-function get_metabar( $format = '' ) {
-
-	$metabar = '';
-
-	if ( is_page() )
-		return; // don't do post-info on pages
-
-	if( $format == 'clip'){
-
-		$metabar .= sprintf( '<span class="sword">%s</span> [post_date] ', __('On','pagelines') );
-		$metabar .= sprintf( '<span class="sword">%s</span> [post_author_posts_link] ', __('By','pagelines') );
-
-	} else {
-
-		if(pagelines_option('byline_author')){
-			$metabar .= sprintf( '<span class="sword">%s</span> [post_author_posts_link] ', __('By','pagelines') );
-		}
-
-		if(pagelines_option('byline_date')){
-			$metabar .= sprintf( '<span class="sword">%s</span> [post_date] ', __('On','pagelines') );
-		}
-
-		if(pagelines_option('byline_comments')){
-			$metabar .= '&middot; [post_comments] ';
-		}
-
-		if(pagelines_option('byline_categories')){
-			$metabar .= sprintf( '&middot; <span class="sword">%s</span> [post_categories]', __('In','pagelines') );
-		}
-
-	}
-
-	$metabar .= ' [post_edit]';
-
-	printf( '<div class="metabar"><em>%s</em></div>', apply_filters('metabar', $metabar, $format) );
-
-}
 ?>
