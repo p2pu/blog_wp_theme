@@ -564,6 +564,9 @@ be seen on the Desktop.
 body {
   padding-top: 60px; }
 
+.excerpt-wraper {
+  overflow: hidden; }
+
 /* 
 you can call the larger styles if you want, but there's really no need 
 */
