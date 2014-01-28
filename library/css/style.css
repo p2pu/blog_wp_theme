@@ -6406,7 +6406,6 @@ a.label:hover, a.badge:hover {
 /* bottom border only on clemintine buttons and task list progress bar */
 body {
   background-color: #f3f4f8;
-  padding-top: 60px;
   color: #515665; }
 
 body,
@@ -7139,7 +7138,6 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
@@ -7323,6 +7321,52 @@ PEOPLE STYLES
     visibility: visible;
     opacity: 1;
     display: block; }
+
+/*********************
+TAGCLOUD STYLES
+*********************/
+.tagcloud .tag-link-13,
+.tagcloud .tag-link-32,
+.tagcloud .tag-link-50,
+.tagcloud .tag-link-45,
+.tagcloud .tag-link-40,
+.tagcloud .tag-link-36,
+.tagcloud .tag-link-7,
+.tagcloud .tag-link-21,
+.tagcloud .tag-link-33,
+.tagcloud .tag-link-24,
+.tagcloud .tag-link-17,
+.tagcloud .tag-link-19,
+.tagcloud .tag-link-26 {
+  color: #b7d500; }
+.tagcloud .tag-link-31,
+.tagcloud .tag-link-49,
+.tagcloud .tag-link-2,
+.tagcloud .tag-link-34,
+.tagcloud .tag-link-5,
+.tagcloud .tag-link-20,
+.tagcloud .tag-link-4,
+.tagcloud .tag-link-35,
+.tagcloud .tag-link-37,
+.tagcloud .tag-link-52,
+.tagcloud .tag-link-38,
+.tagcloud .tag-link-18,
+.tagcloud .tag-link-44 {
+  color: #ffbc1a; }
+.tagcloud .tag-link-25,
+.tagcloud .tag-link-6,
+.tagcloud .tag-link-14,
+.tagcloud .tag-link-27,
+.tagcloud .tag-link-51,
+.tagcloud .tag-link-48,
+.tagcloud .tag-link-39,
+.tagcloud .tag-link-28,
+.tagcloud .tag-link-9,
+.tagcloud .tag-link-8,
+.tagcloud .tag-link-23,
+.tagcloud .tag-link-41,
+.tagcloud .tag-link-11 {
+  color: #ff7300; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -7518,9 +7562,29 @@ SIDEBARS & ASIDES
 *********************/
 .sidebar ul {
   margin-left: 0; }
+.sidebar #searchform {
+  margin-bottom: 0;
+  position: relative; }
+  .sidebar #searchform input {
+    margin: 0;
+    width: 100%;
+    padding-right: 30px; }
+  .sidebar #searchform #searchsubmit {
+    border: none;
+    background: none;
+    color: #999999;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 7px; }
 
 .widget ul li {
   /* deep nesting */ }
+.widget.widget_archive select {
+  width: 100%; }
+.widget.widget_meta ul li a {
+  font-size: 12px;
+  color: #999; }
 
 /*********************
 FOOTER STYLES
@@ -7823,60 +7887,10 @@ you can add resource intensive styles.
 
   /* links widget */
   /* meta widget */
-  .widget_meta ul li a {
-    font-size: 12px;
-    color: #999; }
-
   /* pages widget */
   /* recent-posts widget */
   /* archives widget */
-  .widget_archive select {
-    width: 100%; }
-
   /* tag-cloud widget */
-  .widget_tag_cloud .tag-link-13,
-  .widget_tag_cloud .tag-link-32,
-  .widget_tag_cloud .tag-link-50,
-  .widget_tag_cloud .tag-link-45,
-  .widget_tag_cloud .tag-link-40,
-  .widget_tag_cloud .tag-link-36,
-  .widget_tag_cloud .tag-link-7,
-  .widget_tag_cloud .tag-link-21,
-  .widget_tag_cloud .tag-link-33,
-  .widget_tag_cloud .tag-link-24,
-  .widget_tag_cloud .tag-link-17,
-  .widget_tag_cloud .tag-link-19,
-  .widget_tag_cloud .tag-link-26 {
-    color: #b7d500; }
-  .widget_tag_cloud .tag-link-31,
-  .widget_tag_cloud .tag-link-49,
-  .widget_tag_cloud .tag-link-2,
-  .widget_tag_cloud .tag-link-34,
-  .widget_tag_cloud .tag-link-5,
-  .widget_tag_cloud .tag-link-20,
-  .widget_tag_cloud .tag-link-4,
-  .widget_tag_cloud .tag-link-35,
-  .widget_tag_cloud .tag-link-37,
-  .widget_tag_cloud .tag-link-52,
-  .widget_tag_cloud .tag-link-38,
-  .widget_tag_cloud .tag-link-18,
-  .widget_tag_cloud .tag-link-44 {
-    color: #ffbc1a; }
-  .widget_tag_cloud .tag-link-25,
-  .widget_tag_cloud .tag-link-6,
-  .widget_tag_cloud .tag-link-14,
-  .widget_tag_cloud .tag-link-27,
-  .widget_tag_cloud .tag-link-51,
-  .widget_tag_cloud .tag-link-48,
-  .widget_tag_cloud .tag-link-39,
-  .widget_tag_cloud .tag-link-28,
-  .widget_tag_cloud .tag-link-9,
-  .widget_tag_cloud .tag-link-8,
-  .widget_tag_cloud .tag-link-23,
-  .widget_tag_cloud .tag-link-41,
-  .widget_tag_cloud .tag-link-11 {
-    color: #ff7300; }
-
   /* calendar widget */
   /* category widget */
   /* recent-comments widget */
@@ -7930,7 +7944,9 @@ you can add resource intensive styles.
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop. 
   
-  ******************************************************************/ }
+  ******************************************************************/
+  body {
+    padding-top: 60px; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
