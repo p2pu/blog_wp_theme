@@ -6406,6 +6406,7 @@ a.label:hover, a.badge:hover {
 /* bottom border only on clemintine buttons and task list progress bar */
 body {
   background-color: #f3f4f8;
+  padding-top: 60px;
   color: #515665; }
 
 body,
@@ -7046,6 +7047,9 @@ style a page via class
 /* if user is logged in */
 /* paged items like search results or archives */
 /* individual paged (i.e. body.paged-3) */
+li {
+  line-height: inherit; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
